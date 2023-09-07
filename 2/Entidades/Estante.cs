@@ -29,7 +29,7 @@ namespace Entidades
                 this.libros.Append(libro);
                 this.cantidadMaximaLibros--;
                 Console.WriteLine($"Libro {libro.GetTitulo()} agregado correctamente\n");
-
+                comi
             }
             else
             {
