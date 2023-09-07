@@ -88,16 +88,35 @@ namespace _2
                         Console.WriteLine("\n Gracias por usar la libreria \n");
                         break;
                     case "B":
-                        Console.WriteLine("Ingrese nombre de libro");
-                        string nombreLibro = Console.ReadLine().ToUpper();
-                        Console.WriteLine("Ingrese nombre Autor");
-                        string nombreAutor = Console.ReadLine().ToUpper();
-                        Libro libro = new Libro(nombreLibro,nombreAutor);
-                        MiEstante.AgregarLibroAlEstante(libro);
+                        if(MiEstante.GetCantidadLibros() > 0)
+                        {
+                            Console.WriteLine("Ingrese nombre de libro");
+                            string nombreLibro = Console.ReadLine().ToUpper();
+                            Console.WriteLine("Ingrese nombre Autor");
+                            string nombreAutor = Console.ReadLine().ToUpper();
+                            Libro libro = new Libro(nombreLibro, nombreAutor);
+                            MiEstante.AgregarLibroAlEstante(libro);
+                        }else
+                        {
+                            Console.WriteLine("\n Limite de estanteria alcanzado\n");
+                        }
                         break;
                     case "C":
-                        //BAJA
-                        Console.WriteLine("C");
+                        if (MiEstante.GetCantidadLibros() < 4)
+                        {
+                            Console.WriteLine("Ingrese Id de libro a dar de baja");
+                            string nombreLibro = Console.ReadLine().ToUpper();
+                            if (MiEstante.SacarLibroDelEstante() == -1)
+                            {
+
+                            }
+                            Libro libro = new Libro(nombreLibro, nombreAutor);
+                            MiEstante.AgregarLibroAlEstante(libro);
+                        }
+                        else
+                        {
+                            Console.WriteLine("\n Limite de estanteria alcanzado\n");
+                        }
                         break;
                     case "D":
                         //MODIFICAR
