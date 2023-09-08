@@ -40,6 +40,7 @@ namespace Entidades
             if(indiceABorrar == -1)
             {
                 return indiceABorrar;
+
             }
             else
             {
@@ -48,6 +49,7 @@ namespace Entidades
                 this.idLibro++;
                 Console.WriteLine($"\nLibro {libros[indiceABorrar].GetTitulo()} del autor {libros[indiceABorrar].GetAutor()} dado de baja Correctamente\n" +
                     $"Muchas gracias por usar la Biblioteca!");
+                return indiceABorrar; 
             }
             
             

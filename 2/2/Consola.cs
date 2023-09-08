@@ -104,14 +104,26 @@ namespace _2
                     case "C":
                         if (MiEstante.GetCantidadLibros() < 4)
                         {
-                            Console.WriteLine("Ingrese Id de libro a dar de baja");
-                            string nombreLibro = Console.ReadLine().ToUpper();
-                            if (MiEstante.SacarLibroDelEstante() == -1)
-                            {
+                            
+                            Console.WriteLine("Ingrese Id (Numero) de libro a dar de baja");
+                            int idLibro;
+                            bool intParseTry = int.TryParse(Console.ReadLine(),out idLibro);
+                            Console.WriteLine(intParseTry);
+                            
+                            Console.WriteLine(MiEstante.SacarLibroDelEstante(idLibro));
 
+                            if (MiEstante.SacarLibroDelEstante(idLibro) != -1 && intParseTry == true)
+                            {
+                                MiEstante.SacarLibroDelEstante(idLibro);
+                                Console.WriteLine($"Id {idLibro} dado de baja correctamente");
+                            }if (MiEstante.GetCantidadLibros() > 3 && intParseTry == true)
+                            {
+                                Console.WriteLine("\nEspacio maximo de la estanteria alcanzado o ID incorrecto\n");
+                            } else
+                            {
+                                Console.WriteLine("Tiene que ser un numero");
                             }
-                            Libro libro = new Libro(nombreLibro, nombreAutor);
-                            MiEstante.AgregarLibroAlEstante(libro);
+                            break;
                         }
                         else
                         {
