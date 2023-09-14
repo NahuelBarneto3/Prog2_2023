@@ -116,8 +116,11 @@ namespace _2
                             {
                                 MiEstante.SacarLibroDelEstante(idLibro);
                                 Console.WriteLine($"Id {idLibro} dado de baja correctamente");
-                            }if (MiEstante.GetCantidadLibros() > 3 && intParseTry == true)
+                            }else if (MiEstante.GetCantidadLibros() > 3 && intParseTry == true)
+                             
                             {
+                                    
+
                                 Console.WriteLine("\nEspacio maximo de la estanteria alcanzado o ID incorrecto\n");
                             } else
                             {
@@ -152,8 +155,10 @@ namespace _2
             sb.AppendLine("|  D- MODIFICAR   |");
 
             Console.WriteLine(sb);
+
             
+        
         }
-    }
     
+    }
 }

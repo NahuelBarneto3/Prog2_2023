@@ -37,25 +37,18 @@ namespace Entidades
         {
             
             int indiceABorrar = Array.IndexOf(this.libros, id);
-            if(indiceABorrar == -1)
-            {
-                return indiceABorrar;
-
-            }
-            else
+            if(indiceABorrar != -1)
             {
                 libros = libros.Where((e, i) => i > indiceABorrar).ToArray();
                 this.cantidadMaximaLibros++;
                 this.idLibro++;
                 Console.WriteLine($"\nLibro {libros[indiceABorrar].GetTitulo()} del autor {libros[indiceABorrar].GetAutor()} dado de baja Correctamente\n" +
                     $"Muchas gracias por usar la Biblioteca!");
-                return indiceABorrar; 
+
             }
-            
-            
-            
+            return indiceABorrar;
         }
 
-        
+
     }
 }
