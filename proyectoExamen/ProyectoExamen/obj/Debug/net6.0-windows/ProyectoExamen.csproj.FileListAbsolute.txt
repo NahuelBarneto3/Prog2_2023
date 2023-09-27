@@ -20,4 +20,4 @@ C:\Users\Supervisor\source\repos\ProyectoExamen\ProyectoExamen\bin\Debug\net6.0-
 C:\Users\Supervisor\source\repos\ProyectoExamen\ProyectoExamen\obj\Debug\net6.0-windows\ProyectoExamen.csproj.AssemblyReference.cache
 C:\Users\Supervisor\source\repos\ProyectoExamen\ProyectoExamen\obj\Debug\net6.0-windows\ProyectoExamen.FormAdmin.resources
 C:\Users\Supervisor\source\repos\ProyectoExamen\ProyectoExamen\obj\Debug\net6.0-windows\ProyectoExamen.csproj.CopyComplete
-C:\Users\Supervisor\source\repos\ProyectoExamen\ProyectoExamen\obj\Debug\net6.0-windows\FormOperario.FormOperario.resources
+C:\Users\Supervisor\source\repos\ProyectoExamen\ProyectoExamen\obj\Debug\net6.0-windows\ProyectoExamen.FormOperario.resources

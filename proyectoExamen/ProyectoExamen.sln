@@ -5,9 +5,7 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoExamen", "ProyectoExamen\ProyectoExamen.csproj", "{17075FE4-62CA-4080-9B20-C0616B25184F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{6690D024-E886-4ECA-8AA4-A8F3BC23A9C3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormOperario", "FormOperario\FormOperario.csproj", "{D899442C-9EE6-4DE4-847C-7AE01A25B988}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", "Entidades\Entidades.csproj", "{6690D024-E886-4ECA-8AA4-A8F3BC23A9C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{6690D024-E886-4ECA-8AA4-A8F3BC23A9C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6690D024-E886-4ECA-8AA4-A8F3BC23A9C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6690D024-E886-4ECA-8AA4-A8F3BC23A9C3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D899442C-9EE6-4DE4-847C-7AE01A25B988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D899442C-9EE6-4DE4-847C-7AE01A25B988}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D899442C-9EE6-4DE4-847C-7AE01A25B988}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D899442C-9EE6-4DE4-847C-7AE01A25B988}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -34,6 +34,9 @@
             lblUser = new Label();
             lblPassword = new Label();
             btnLogIn = new Button();
+            cbOperario = new CheckBox();
+            cbSupervisor = new CheckBox();
+            btnPrueba = new Button();
             SuspendLayout();
             // 
             // txtUser
@@ -59,9 +62,9 @@
             lblLogin.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point);
             lblLogin.Location = new Point(344, 181);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(90, 28);
+            lblLogin.Size = new Size(96, 28);
             lblLogin.TabIndex = 2;
-            lblLogin.Text = "LOGIN";
+            lblLogin.Text = "LOG IN";
             // 
             // lblUser
             // 
@@ -83,7 +86,7 @@
             // 
             // btnLogIn
             // 
-            btnLogIn.Location = new Point(344, 328);
+            btnLogIn.Location = new Point(344, 356);
             btnLogIn.Name = "btnLogIn";
             btnLogIn.Size = new Size(100, 54);
             btnLogIn.TabIndex = 5;
@@ -91,12 +94,47 @@
             btnLogIn.UseVisualStyleBackColor = true;
             btnLogIn.Click += btnLogIn_Click;
             // 
+            // cbOperario
+            // 
+            cbOperario.AutoSize = true;
+            cbOperario.Location = new Point(351, 306);
+            cbOperario.Name = "cbOperario";
+            cbOperario.Size = new Size(72, 19);
+            cbOperario.TabIndex = 6;
+            cbOperario.Text = "Operario";
+            cbOperario.UseVisualStyleBackColor = true;
+            cbOperario.CheckedChanged += cbOperario_CheckedChanged;
+            // 
+            // cbSupervisor
+            // 
+            cbSupervisor.AutoSize = true;
+            cbSupervisor.Location = new Point(351, 331);
+            cbSupervisor.Name = "cbSupervisor";
+            cbSupervisor.Size = new Size(81, 19);
+            cbSupervisor.TabIndex = 7;
+            cbSupervisor.Text = "Supervisor";
+            cbSupervisor.UseVisualStyleBackColor = true;
+            cbSupervisor.CheckedChanged += cbSupervisor_CheckedChanged;
+            // 
+            // btnPrueba
+            // 
+            btnPrueba.Location = new Point(620, 12);
+            btnPrueba.Name = "btnPrueba";
+            btnPrueba.Size = new Size(168, 62);
+            btnPrueba.TabIndex = 8;
+            btnPrueba.Text = "ButtonPrueba";
+            btnPrueba.UseVisualStyleBackColor = true;
+            btnPrueba.Click += btnPrueba_Click;
+            // 
             // FormLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cornsilk;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnPrueba);
+            Controls.Add(cbSupervisor);
+            Controls.Add(cbOperario);
             Controls.Add(btnLogIn);
             Controls.Add(lblPassword);
             Controls.Add(lblUser);
@@ -105,7 +143,6 @@
             Controls.Add(txtUser);
             Name = "FormLogin";
             Text = "Login";
-            Load += FormLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -118,5 +155,8 @@
         private Label lblUser;
         private Label lblPassword;
         private Button btnLogIn;
+        private CheckBox cbOperario;
+        private CheckBox cbSupervisor;
+        private Button btnPrueba;
     }
 }

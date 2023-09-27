@@ -12,10 +12,4 @@
     <ProjectReference Include="..\Entidades\Entidades.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Update="FormOperario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-  </ItemGroup>
-
 </Project>
