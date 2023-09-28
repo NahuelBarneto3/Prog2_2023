@@ -21,10 +21,7 @@ namespace ProyectoExamen
         {
             /// <summary>
             /// Recupera los datos ingresados en los textbox para permitirnos o denegarnos el ingreso
-            /// </summary>
-            //la idea es cuando estemos con diccionarios, generar un diccionario con clave de operario y valor el valor tenga guardada la contrasena
-            //por ahora solo probamos funcionamiento
-            //con los objetos operario y supervisor por separados se pueden cagar directamente listas de cada uno con sus respectivos users y pass
+            /// </summary
             FormAdmin formAdmin = new FormAdmin();
             FormOperario formOperario = new FormOperario();
             string passwordIngresada = txtPassword.Text;
@@ -34,8 +31,6 @@ namespace ProyectoExamen
             string userABuscar = "";
             string passwordABuscar = "";
 
-            MessageBox.Show($"usuario valido {userIngresado} pass {passwordIngresada} ", $"User TEST"
-                            , MessageBoxButtons.OK, MessageBoxIcon.Information);
             //agregar validaciones de quien se registro 
             //si un operario o un supervisor, para poder largar el form que corresponde
             //salto de un formulario login a el formulario de administracion
@@ -48,7 +43,6 @@ namespace ProyectoExamen
                     passwordABuscar = operario.Password;
                     if (userABuscar == userIngresado && passwordABuscar == passwordIngresada)
                     {
-                        MessageBox.Show("usuario valido ", "User", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         formOperario.Show();
                         formOperario.Activate();
                         this.Hide();
@@ -123,8 +117,8 @@ namespace ProyectoExamen
             Supervisor supervisorPrueba2 = new Supervisor("SUPERVISOR2", "CONTRASENA2");
             listSupervisores.Add(supervisorPrueba1);
             listSupervisores.Add(supervisorPrueba2);
-            MessageBox.Show($"Datos cargados {listOperarios[0].User} {listOperarios[0].Password}", "test", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            MessageBox.Show($"Datos cargados {listSupervisores[0].User} {listSupervisores[0].Password}", "test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Datos cargados", "test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
 
 
 
