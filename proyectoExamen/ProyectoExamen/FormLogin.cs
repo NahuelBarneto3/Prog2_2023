@@ -10,7 +10,7 @@ namespace ProyectoExamen
 
 
         List<Supervisor> listSupervisores = new List<Supervisor>();
-       
+
 
         public FormLogin()
         {
@@ -44,7 +44,7 @@ namespace ProyectoExamen
             {
                 foreach (Operario operario in listOperarios)
                 {
-                    userABuscar = operario.Password;
+                    userABuscar = operario.User;
                     passwordABuscar = operario.Password;
                     if (userABuscar == userIngresado && passwordABuscar == passwordIngresada)
                     {
@@ -117,13 +117,14 @@ namespace ProyectoExamen
 
             Operario operarioPrueba1 = new Operario("OPERARIO1", "CONTRASENA1");
             Operario operarioPrueba2 = new Operario("OPERARIO2", "CONTRASENA2");
-            listOperarios.Append(operarioPrueba1);
-            listOperarios.Append(operarioPrueba2);
+            listOperarios.Add(operarioPrueba1);
+            listOperarios.Add(operarioPrueba2);
             Supervisor supervisorPrueba1 = new Supervisor("SUPERVISOR1", "CONTRASENA1");
             Supervisor supervisorPrueba2 = new Supervisor("SUPERVISOR2", "CONTRASENA2");
-            listSupervisores.Append(supervisorPrueba1);
-            listSupervisores.Append(supervisorPrueba2);
-            MessageBox.Show($"Datos cargados {operarioPrueba1.User} {operarioPrueba1.Password}", "test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            listSupervisores.Add(supervisorPrueba1);
+            listSupervisores.Add(supervisorPrueba2);
+            MessageBox.Show($"Datos cargados {listOperarios[0].User} {listOperarios[0].Password}", "test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"Datos cargados {listSupervisores[0].User} {listSupervisores[0].Password}", "test", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
 

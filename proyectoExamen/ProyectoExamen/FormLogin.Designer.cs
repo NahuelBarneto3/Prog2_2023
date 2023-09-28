@@ -49,7 +49,7 @@
             // 
             // txtPassword
             // 
-            txtPassword.CharacterCasing = CharacterCasing.Lower;
+            txtPassword.CharacterCasing = CharacterCasing.Upper;
             txtPassword.Location = new Point(344, 277);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(100, 23);

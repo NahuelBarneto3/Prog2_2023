@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class ArrayUsers
+    public class ArrayUsers
     {
         private List<Operario> operarios;
         private List<Supervisor> supervisor;

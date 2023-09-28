@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Supervisor\\source\\repos\\ProyectoExamen\\ProyectoExamen\\ProyectoExamen.csproj",
+      "projectUniqueName": "C:\\Users\\Supervisor\\source\\repos\\proyectoExamen\\ProyectoExamen\\ProyectoExamen.csproj",
       "projectName": "ProyectoExamen",
-      "projectPath": "C:\\Users\\Supervisor\\source\\repos\\ProyectoExamen\\ProyectoExamen\\ProyectoExamen.csproj",
+      "projectPath": "C:\\Users\\Supervisor\\source\\repos\\proyectoExamen\\ProyectoExamen\\ProyectoExamen.csproj",
       "packagesPath": "C:\\Users\\Supervisor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Supervisor\\source\\repos\\ProyectoExamen\\ProyectoExamen\\obj\\",
+      "outputPath": "C:\\Users\\Supervisor\\source\\repos\\proyectoExamen\\ProyectoExamen\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Supervisor\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Supervisor\\source\\repos\\ProyectoExamen\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\Supervisor\\source\\repos\\ProyectoExamen\\Entidades\\Entidades.csproj"
+            "C:\\Users\\Supervisor\\source\\repos\\proyectoExamen\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Supervisor\\source\\repos\\proyectoExamen\\Entidades\\Entidades.csproj"
             }
           }
         }
