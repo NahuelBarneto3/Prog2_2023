@@ -118,9 +118,23 @@ namespace ProyectoExamen
             listSupervisores.Add(supervisorPrueba1);
             listSupervisores.Add(supervisorPrueba2);
             MessageBox.Show("Datos cargados", "test", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
+
+            txtUser.Text = "OPERARIO1";
+            txtPassword.Text = "CONTRASENA1";
+            cbOperario.Checked = true;
 
 
+
+        }
+
+        private void FormLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Quiere cerrar la aplicacion?", "Cierre", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.No)
+            {
+                e.Cancel = true;
+                return;
+            }
 
 
         }

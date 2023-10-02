@@ -2,9 +2,28 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
+      "FontAwesome.Sharp/6.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/FontAwesome.Sharp.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/FontAwesome.Sharp.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
+      },
       "Entidades/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FontAwesome": "4.7.0",
+          "FontAwesome.Sharp": "6.3.0"
+        },
         "compile": {
           "bin/placeholder/Entidades.dll": {}
         },
@@ -15,6 +34,42 @@
     }
   },
   "libraries": {
+    "FontAwesome/4.7.0": {
+      "sha512": "n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
+      "type": "package",
+      "path": "fontawesome/4.7.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Content/font-awesome.css",
+        "Content/Content/font-awesome.min.css",
+        "Content/fonts/FontAwesome.otf",
+        "Content/fonts/fontawesome-webfont.eot",
+        "Content/fonts/fontawesome-webfont.svg",
+        "Content/fonts/fontawesome-webfont.ttf",
+        "Content/fonts/fontawesome-webfont.woff",
+        "Content/fonts/fontawesome-webfont.woff2",
+        "fontawesome.4.7.0.nupkg.sha512",
+        "fontawesome.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "FontAwesome.Sharp/6.3.0": {
+      "sha512": "3/Fb0N04yYK8An07oox5ISlUyNgsnWildHfoP69uqTEOsemQemRyciphMkXZOcdBupjUD+lVsRE3FqG41/dzPA==",
+      "type": "package",
+      "path": "fontawesome.sharp/6.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fontawesome.sharp.6.3.0.nupkg.sha512",
+        "fontawesome.sharp.nuspec",
+        "lib/net472/FontAwesome.Sharp.dll",
+        "lib/net48/FontAwesome.Sharp.dll",
+        "lib/net6.0-windows7.0/FontAwesome.Sharp.dll",
+        "lib/netcoreapp3.1/FontAwesome.Sharp.dll"
+      ]
+    },
     "Entidades/1.0.0": {
       "type": "project",
       "path": "../Entidades/Entidades.csproj",
@@ -23,7 +78,9 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "Entidades >= 1.0.0"
+      "Entidades >= 1.0.0",
+      "FontAwesome >= 4.7.0",
+      "FontAwesome.Sharp >= 6.3.0"
     ]
   },
   "packageFolders": {
@@ -32,11 +89,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Supervisor\\source\\repos\\proyectoExamen\\ProyectoExamen\\ProyectoExamen.csproj",
+      "projectUniqueName": "C:\\Users\\Supervisor\\source\\repos\\ProyectoExamen\\ProyectoExamen\\ProyectoExamen.csproj",
       "projectName": "ProyectoExamen",
-      "projectPath": "C:\\Users\\Supervisor\\source\\repos\\proyectoExamen\\ProyectoExamen\\ProyectoExamen.csproj",
+      "projectPath": "C:\\Users\\Supervisor\\source\\repos\\ProyectoExamen\\ProyectoExamen\\ProyectoExamen.csproj",
       "packagesPath": "C:\\Users\\Supervisor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Supervisor\\source\\repos\\proyectoExamen\\ProyectoExamen\\obj\\",
+      "outputPath": "C:\\Users\\Supervisor\\source\\repos\\ProyectoExamen\\ProyectoExamen\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Supervisor\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +110,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Supervisor\\source\\repos\\proyectoExamen\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\Supervisor\\source\\repos\\proyectoExamen\\Entidades\\Entidades.csproj"
+            "C:\\Users\\Supervisor\\source\\repos\\ProyectoExamen\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Supervisor\\source\\repos\\ProyectoExamen\\Entidades\\Entidades.csproj"
             }
           }
         }
@@ -68,6 +125,16 @@
     "frameworks": {
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "FontAwesome": {
+            "target": "Package",
+            "version": "[4.7.0, )"
+          },
+          "FontAwesome.Sharp": {
+            "target": "Package",
+            "version": "[6.3.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

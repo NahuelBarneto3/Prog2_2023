@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "rnnv0UJZoboLVAh4Plrwam7l0wcKgFjKHNRl8O0BFMeNnFcCnbQPo/V7S2Uo4SVVh4cw+H+S05jQSz5/5QcVEA==",
+  "dgSpecHash": "TKWQsiyVdtsRzbHd/ktWi+08pzHwgrEkVl4wx0ramYknz07pS+Ucr1KTl4RcXsNE8s/N/FM14l7MP4Y8Vni+cg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Supervisor\\source\\repos\\proyectoExamen\\Entidades\\Entidades.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Supervisor\\source\\repos\\ProyectoExamen\\Entidades\\Entidades.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Supervisor\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
+    "C:\\Users\\Supervisor\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
+  ],
   "logs": []
 }
