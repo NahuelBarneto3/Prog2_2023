@@ -28,181 +28,246 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listView1 = new ListView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmin));
+            lstVProductos = new ListView();
+            columnHeader1 = new ColumnHeader();
+            columnHeader2 = new ColumnHeader();
             label1 = new Label();
-            label2 = new Label();
+            lblCantidad = new Label();
+            gbNewProduct = new GroupBox();
+            numCantidadAgregar = new NumericUpDown();
             label3 = new Label();
-            label4 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            groupBox1 = new GroupBox();
+            txtCantidadActual = new TextBox();
+            txtProducto = new TextBox();
             btnAgregar = new Button();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            button1 = new Button();
+            label2 = new Label();
+            pictureBox3 = new PictureBox();
             button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            groupBox1.SuspendLayout();
+            gbNewProduct.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numCantidadAgregar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
-            // listView1
+            // lstVProductos
             // 
-            listView1.Location = new Point(522, 22);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(250, 171);
-            listView1.TabIndex = 0;
-            listView1.UseCompatibleStateImageBehavior = false;
+            lstVProductos.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2 });
+            lstVProductos.ForeColor = SystemColors.WindowText;
+            lstVProductos.FullRowSelect = true;
+            lstVProductos.GridLines = true;
+            lstVProductos.HeaderStyle = ColumnHeaderStyle.Nonclickable;
+            lstVProductos.Location = new Point(1144, 9);
+            lstVProductos.Name = "lstVProductos";
+            lstVProductos.Size = new Size(385, 343);
+            lstVProductos.TabIndex = 0;
+            lstVProductos.UseCompatibleStateImageBehavior = false;
+            lstVProductos.View = View.Details;
+            lstVProductos.Click += lstVProductos_Click;
+            // 
+            // columnHeader1
+            // 
+            columnHeader1.Text = "Producto";
+            columnHeader1.Width = 150;
+            // 
+            // columnHeader2
+            // 
+            columnHeader2.Text = "Cantidad";
+            columnHeader2.Width = 80;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(6, 19);
+            label1.Location = new Point(6, 30);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(56, 15);
             label1.TabIndex = 1;
-            label1.Text = "label1";
+            label1.Text = "Producto";
             // 
-            // label2
+            // lblCantidad
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(6, 59);
-            label2.Name = "label2";
-            label2.Size = new Size(38, 15);
-            label2.TabIndex = 2;
-            label2.Text = "label2";
+            lblCantidad.AutoSize = true;
+            lblCantidad.Location = new Point(6, 135);
+            lblCantidad.Name = "lblCantidad";
+            lblCantidad.Size = new Size(109, 15);
+            lblCantidad.TabIndex = 2;
+            lblCantidad.Text = "Cantidad a Agregar";
+            // 
+            // gbNewProduct
+            // 
+            gbNewProduct.BackColor = SystemColors.Info;
+            gbNewProduct.Controls.Add(label2);
+            gbNewProduct.Controls.Add(numCantidadAgregar);
+            gbNewProduct.Controls.Add(label3);
+            gbNewProduct.Controls.Add(txtCantidadActual);
+            gbNewProduct.Controls.Add(txtProducto);
+            gbNewProduct.Controls.Add(label1);
+            gbNewProduct.Controls.Add(lblCantidad);
+            gbNewProduct.Location = new Point(18, 22);
+            gbNewProduct.Name = "gbNewProduct";
+            gbNewProduct.Size = new Size(440, 167);
+            gbNewProduct.TabIndex = 9;
+            gbNewProduct.TabStop = false;
+            gbNewProduct.Text = "Modificacion productos";
+            // 
+            // numCantidadAgregar
+            // 
+            numCantidadAgregar.Location = new Point(121, 133);
+            numCantidadAgregar.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
+            numCantidadAgregar.Name = "numCantidadAgregar";
+            numCantidadAgregar.Size = new Size(120, 23);
+            numCantidadAgregar.TabIndex = 12;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(6, 101);
+            label3.Location = new Point(193, 30);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
-            label3.TabIndex = 3;
-            label3.Text = "label3";
+            label3.Size = new Size(92, 15);
+            label3.TabIndex = 10;
+            label3.Text = "Cantidad Actual";
             // 
-            // label4
+            // txtCantidadActual
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(6, 143);
-            label4.Name = "label4";
-            label4.Size = new Size(38, 15);
-            label4.TabIndex = 4;
-            label4.Text = "label4";
+            txtCantidadActual.Location = new Point(291, 27);
+            txtCantidadActual.Name = "txtCantidadActual";
+            txtCantidadActual.ReadOnly = true;
+            txtCantidadActual.Size = new Size(121, 23);
+            txtCantidadActual.TabIndex = 11;
             // 
-            // textBox1
+            // txtProducto
             // 
-            textBox1.Location = new Point(50, 16);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 5;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(50, 56);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 6;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(50, 98);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 7;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(50, 140);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 8;
-            // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(textBox4);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Location = new Point(12, 22);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(349, 171);
-            groupBox1.TabIndex = 9;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
+            txtProducto.Location = new Point(65, 27);
+            txtProducto.Name = "txtProducto";
+            txtProducto.ReadOnly = true;
+            txtProducto.Size = new Size(121, 23);
+            txtProducto.TabIndex = 9;
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(18, 219);
+            btnAgregar.BackColor = Color.Transparent;
+            btnAgregar.Font = new Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAgregar.ForeColor = SystemColors.ControlText;
+            btnAgregar.Location = new Point(75, 210);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(75, 23);
+            btnAgregar.Size = new Size(102, 52);
             btnAgregar.TabIndex = 9;
             btnAgregar.Text = "Agregar";
-            btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.UseVisualStyleBackColor = false;
+            btnAgregar.Click += btnAgregar_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = SystemColors.Info;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(18, 210);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(51, 52);
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = SystemColors.Info;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(18, 283);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(51, 52);
+            pictureBox2.TabIndex = 12;
+            pictureBox2.TabStop = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.Font = new Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.ControlText;
+            button1.Location = new Point(75, 283);
+            button1.Name = "button1";
+            button1.Size = new Size(102, 52);
+            button1.TabIndex = 13;
+            button1.Text = "Borrar";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(247, 135);
+            label2.Name = "label2";
+            label2.Size = new Size(60, 15);
+            label2.TabIndex = 13;
+            label2.Text = "MAX 9999";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = SystemColors.Info;
+            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(208, 210);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(51, 52);
+            pictureBox3.TabIndex = 15;
+            pictureBox3.TabStop = false;
             // 
             // button2
             // 
-            button2.Location = new Point(99, 219);
+            button2.BackColor = Color.Transparent;
+            button2.Font = new Font("Verdana", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = SystemColors.ControlText;
+            button2.Location = new Point(265, 210);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 10;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(180, 219);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 11;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.Location = new Point(261, 219);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 12;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
+            button2.Size = new Size(102, 52);
+            button2.TabIndex = 14;
+            button2.Text = "Agregar Producto";
+            button2.UseVisualStyleBackColor = false;
             // 
             // FormAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button4);
-            Controls.Add(button3);
+            BackColor = Color.RosyBrown;
+            ClientSize = new Size(1541, 694);
+            Controls.Add(pictureBox3);
             Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(btnAgregar);
-            Controls.Add(groupBox1);
-            Controls.Add(listView1);
+            Controls.Add(gbNewProduct);
+            Controls.Add(lstVProductos);
             Name = "FormAdmin";
             Text = "FormAdmin";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            Load += FormAdmin_Load;
+            gbNewProduct.ResumeLayout(false);
+            gbNewProduct.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numCantidadAgregar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private ListView listView1;
+        private ListView lstVProductos;
         private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private GroupBox groupBox1;
+        private Label lblCantidad;
+        private GroupBox gbNewProduct;
         private Button btnAgregar;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private Button button1;
+        private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
+        private TextBox txtProducto;
+        private Label label3;
+        private TextBox txtCantidadActual;
+        private NumericUpDown numCantidadAgregar;
+        private Label label2;
+        private PictureBox pictureBox3;
         private Button button2;
-        private Button button3;
-        private Button button4;
     }
 }

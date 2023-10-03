@@ -1,70 +1,15 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
-      "FontAwesome.Sharp/6.3.0": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp3.1/FontAwesome.Sharp.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/FontAwesome.Sharp.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App"
-        ]
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "FontAwesome/4.7.0": {
-      "sha512": "n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
-      "type": "package",
-      "path": "fontawesome/4.7.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Content/Content/font-awesome.css",
-        "Content/Content/font-awesome.min.css",
-        "Content/fonts/FontAwesome.otf",
-        "Content/fonts/fontawesome-webfont.eot",
-        "Content/fonts/fontawesome-webfont.svg",
-        "Content/fonts/fontawesome-webfont.ttf",
-        "Content/fonts/fontawesome-webfont.woff",
-        "Content/fonts/fontawesome-webfont.woff2",
-        "fontawesome.4.7.0.nupkg.sha512",
-        "fontawesome.nuspec",
-        "tools/install.ps1"
-      ]
-    },
-    "FontAwesome.Sharp/6.3.0": {
-      "sha512": "3/Fb0N04yYK8An07oox5ISlUyNgsnWildHfoP69uqTEOsemQemRyciphMkXZOcdBupjUD+lVsRE3FqG41/dzPA==",
-      "type": "package",
-      "path": "fontawesome.sharp/6.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "fontawesome.sharp.6.3.0.nupkg.sha512",
-        "fontawesome.sharp.nuspec",
-        "lib/net472/FontAwesome.Sharp.dll",
-        "lib/net48/FontAwesome.Sharp.dll",
-        "lib/net6.0-windows7.0/FontAwesome.Sharp.dll",
-        "lib/netcoreapp3.1/FontAwesome.Sharp.dll"
-      ]
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "FontAwesome >= 4.7.0",
-      "FontAwesome.Sharp >= 6.3.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Supervisor\\.nuget\\packages\\": {}
+    "C:\\Users\\Supervisor\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -75,8 +20,12 @@
       "packagesPath": "C:\\Users\\Supervisor\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Supervisor\\source\\repos\\ProyectoExamen\\Entidades\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\Supervisor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -101,16 +50,6 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
-        "dependencies": {
-          "FontAwesome": {
-            "target": "Package",
-            "version": "[4.7.0, )"
-          },
-          "FontAwesome.Sharp": {
-            "target": "Package",
-            "version": "[6.3.0, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -127,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

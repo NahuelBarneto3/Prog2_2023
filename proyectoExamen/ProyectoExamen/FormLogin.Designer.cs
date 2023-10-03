@@ -118,7 +118,6 @@
             // 
             // btnPrueba
             // 
-            btnPrueba.BackgroundImage = Properties.Resources.hq720;
             btnPrueba.Font = new Font("Cascadia Code SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnPrueba.ForeColor = SystemColors.ControlText;
             btnPrueba.Location = new Point(620, 12);

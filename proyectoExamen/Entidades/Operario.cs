@@ -18,7 +18,8 @@ namespace Entidades
             this.user = user;   
             this.password = pass;
         }
-
+        
+        #region GetterSetters
         public string Password { 
             get 
             {
@@ -40,6 +41,7 @@ namespace Entidades
                 this.user = value.ToUpper();
             }
         }
+        #endregion 
 
     }
 }

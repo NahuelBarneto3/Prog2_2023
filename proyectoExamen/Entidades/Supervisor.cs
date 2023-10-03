@@ -10,6 +10,7 @@
             this.userSup = user;    
             this.passwordSup = pass;
         }
+        #region GetterSetter
 
         public string Password
         {
@@ -33,5 +34,6 @@
                 this.userSup = value.ToUpper();
             }
         }
+        #endregion
     }
 }
