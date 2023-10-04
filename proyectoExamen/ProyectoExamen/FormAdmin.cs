@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,8 +14,9 @@ namespace ProyectoExamen
 {
     public partial class FormAdmin : Form
     {
+        DicMateriales inventario = new DicMateriales();
 
-        Dictionary<string, int> inventario = new Dictionary<string, int>();
+        //Dictionary<string, int> inventario = new Dictionary<string, int>();
 
         public FormAdmin()
         {
@@ -28,14 +30,8 @@ namespace ProyectoExamen
 
         private void FormAdmin_Load(object sender, EventArgs e)
         {
-            inventario["Harina de Avena"] = 5000;      // 5000 gramos de harina
-            inventario["Azucar"] = 5000;      // 5000 gramos de azucar
-            inventario["Manteca"] = 4500;      // 4500 gramos de Manteca
-            inventario["Avena"] = 6000;      // 6000 gramos de Avena
-            inventario["Huevos"] = 600;      // 600 unidades huevos
-            inventario["Bicarbonato de sodio"] = 1000;      // 1000 gramos de Bicarbonato de sodio
-            inventario["Sal"] = 7500;      // 7500 gramos de sal
-            inventario["Extracto de vainilla"] = 1000;  // 1000 ml de bicarbonato
+            //traer el inventario con algun getter   
+            inventario.CargarInventario();
             foreach (var item in inventario)
             {
                 ListViewItem materiales = new ListViewItem(item.Key);
